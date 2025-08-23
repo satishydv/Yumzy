@@ -1,5 +1,6 @@
 "use client";
 import Logo from '@/components/Helper/Logo'
+import ThemeToggle from '@/components/Helper/ThemeToggle';
 import { navLinks } from '@/constant/constant'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
@@ -28,7 +29,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className={`${navBg ?'bg-white shadow-md':'fixed'} h-[12vh] z-100 fixed w-full transition-all duration-200`}>
+    <div className={`${navBg ?'bg-white dark:bg-gray-900 shadow-md':'fixed'} h-[12vh] z-100 fixed w-full transition-all duration-200`}>
       <div className='flex items-center justify-between h-full w-[90%] xl:w-[80%] mx-auto'>
         <Logo/>
         {/* NAVLINKS */}
@@ -39,7 +40,7 @@ useEffect(() => {
               <Link
               href={link.url}
               key={link.id}
-              className='text-gray-800 hover:text-orange-500 font-semibold transition-all duration-200'
+              className='text-gray-800 hover:text-orange-500 dark:text-white font-semibold transition-all duration-200'
               >
               {link.label}
               </Link>
@@ -53,6 +54,7 @@ useEffect(() => {
           Join Now
           </button>
           {/* Theme */}
+          <ThemeToggle/>
           {/* Burger Menu */}
           <HiBars3BottomRight
           onClick={openNav}

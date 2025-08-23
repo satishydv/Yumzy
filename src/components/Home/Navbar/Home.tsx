@@ -1,9 +1,17 @@
 import React from 'react'
+import Hero from '../Hero'
+import Restaurant from '../Restaurant/Restaurant'
+import Category from '../Category/Category'
+import HowItWork from '../HowItWork/HowItWork'
 
 const Home = () => {
   return (
-    <div className='h-[2000px]'
-    >Home</div>
+    <div>
+      <Hero/>
+      <Restaurant/>
+      <Category/>
+      <HowItWork/>
+    </div>
   )
 }
 
