@@ -1,11 +1,11 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaTwitch, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaTwitch, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { MdDeliveryDining } from 'react-icons/md'
 
 const Footer = () => {
   return (
     <div className='pt-16 pb-16 bg-gray-800 dark:bg-gray-900'>
-        <div className='w-[90%] md:w-[80%] mx-auto items-start grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10'>
+        <div className='w-[90%] md:w-[80%] mx-auto items-start grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10'>
             {/* 1st */}
             <div>
                 <div className='flex items-center space-x-2'>
@@ -68,6 +68,17 @@ const Footer = () => {
                         </div>
 
         </div>
+        </div>
+        {/* Bottom part */}
+        <div className='mt-8 w-[80%] md:w-[70%] mx-auto border-t border-gray-700 pt-8 flex flex-col md:flex-row items-center justify-between text-gray-600 text-sm'>
+            <p className='text-center text-white md:text-left'>Copyright © 2025 Webdev. All rights reserved</p>
+            <div className='flex items-center text-white space-x-4 mt-4 md:mt-0'>
+                <span>Social :</span>
+                <span className='text-white hover:text-gray-500'><FaFacebook/></span>
+                <span className='text-white hover:text-gray-500'><FaTwitter/></span>
+                <span className='text-white hover:text-gray-500'><FaInstagram/></span>
+                <span className='text-white hover:text-gray-500'><FaYoutube/></span>
+            </div>
         </div>
     </div>
     

@@ -8,6 +8,9 @@ const Hero = () => {
     <div className='relative w-full h-screen flex justify-center flex-col'>
         <div className='w-[90%] md:w-[80%] mx-auto items-center grid grid-cols-1 md:grid-cols-2 gap-10'>
         {/* Text content */}
+        <div data-aos="fade-up">
+
+        
         <div className='flex flex-col gap-6'>
           <h1 className='text-3xl md:text-4xl lg:text-5xl font-extrabold text-black dark:text-white sm:leading-[2.5rem] md:leading-[4.5rem]'>
             Your favorite food, {" "} <span className='text-pink-600'>delivered</span> to your home
@@ -50,8 +53,12 @@ const Hero = () => {
               </a>
           </div>
         </div>
+        </div>
         {/* Image content */}
-        <div className='mx-auto hidden md:block'>
+        <div
+        data-aos="fade-left"
+        data-aos-delay="150"
+        className='mx-auto hidden md:block'>
           <Image 
           src="/images/hero.png"
           alt="Hero Image"

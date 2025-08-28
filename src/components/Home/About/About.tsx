@@ -6,11 +6,12 @@ const About = () => {
     <div className='pt-16 pb-16'>
         <div className='w-[90%] md:w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center'>
                 {/* Image section */}
-                <div className='mx-auto'>
+                <div data-aos="fade-right" data-aos-anchor-placement="top-center"
+                 className='mx-auto'>
                     <Image src="/images/a.png" alt="About Us" width={800} height={800}/>
         </div>
         {/* Text section */}
-        <div>
+        <div data-aos="fade-left" data-aos-anchor-placement="top-center">
           <h1 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-8 md:leading:12'>
             We deliver our products as fast as we can to our customers
           </h1>

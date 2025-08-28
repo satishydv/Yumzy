@@ -19,7 +19,8 @@ const Restaurant = () => {
         Available in Restaurant Nearby Area
         </div>
         {/* cards section*/}
-        <div className='w-[90%] md:w-[80%] mx-auto items-center grid grid-cols-1 md:grid-cols-3 gap-10'>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center"
+         className='w-[90%] md:w-[80%] mx-auto items-center grid grid-cols-1 md:grid-cols-3 gap-10'>
             {
                 cardData.map((card) => (
                     <RestaurantCard

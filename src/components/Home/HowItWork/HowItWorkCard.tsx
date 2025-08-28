@@ -9,7 +9,8 @@ type Props = {
 
 const HowItWorkCard = ({img, number, title, desc} : Props) => {
   return (
-    <div>
+    <div data-aos="zoom-in"
+         data--aos-anchor-placement="top-center">
         {/* image and num */}
         <div className='relative'>
         <Image

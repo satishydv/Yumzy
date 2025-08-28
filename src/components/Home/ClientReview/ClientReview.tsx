@@ -55,7 +55,7 @@ const reviewData = [
         heading: "Satisfactory",
         review: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         rating: 4,
-        avatar: "/images/c4.png"
+        avatar: "/images/c1.png"
     },
     {
         id: 5,
@@ -63,7 +63,7 @@ const reviewData = [
         heading: "Exceptional Quality",
         review: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
         rating: 5,
-        avatar: "/images/c5.png"
+        avatar: "/images/c3.png"
     }
 ]
 
